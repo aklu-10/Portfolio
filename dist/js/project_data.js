@@ -33,42 +33,42 @@ let projects=
         name:"Sugary Design",
         tools:"Adobe Illustrator",
         imgSource:"./dist/img/illus/background2.png",
-        url:"/dist/img/illus/background2.png",
+        url:"./dist/img/illus/background2.png",
         type:"illus"
     },
     {
         name:"Geometric Design",
         tools:"Adobe Illustrator",
         imgSource:"./dist/img/illus/bird.png",
-        url:"/dist/img/illus/bird.png",
+        url:"./dist/img/illus/bird.png",
         type:"illus"
     },
     {
         name:"Desert",
         tools:"Adobe Illustrator & Silhouette",
         imgSource:"./dist/img/illus/desert.jpg",
-        url:"/dist/img/illus/desert.jpg",
+        url:"./dist/img/illus/desert.jpg",
         type:"illus"
     },
     {
         name:"Wallpaper",
         tools:"Adobe Illustrator & Silhouette",
         imgSource:"./dist/img/illus/screensaver.png",
-        url:"/dist/img/illus/screensaver.png",
+        url:"./dist/img/illus/screensaver.png",
         type:"illus"
     },
     {
         name:"Scenery",
         tools:"Adobe Illustrator & Silhouette",
         imgSource:"./dist/img/illus/wolf_at_night.jpg",
-        url:"/dist/img/illus/wolf_at_night.jpg",
+        url:"./dist/img/illus/wolf_at_night.jpg",
         type:"illus"
     },
     {
         name:"Scenery",
         tools:"Adobe Illustrator & Silhouette",
         imgSource:"./dist/img/illus/sunset.jpg",
-        url:"/dist/img/illus/sunset.jpg",
+        url:"./dist/img/illus/sunset.jpg",
         type:"illus"
     },
     {

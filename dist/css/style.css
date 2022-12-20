@@ -46,6 +46,9 @@ html {
   html {
     font-size: 80%;
   }
+header nav a.hire{
+width:30%;
+}
 }
 
 * {
@@ -126,7 +129,9 @@ header nav a.hire {
   border-radius: 5px;
   color: #ebeb5e;
   cursor: pointer;
+
 }
+
 header nav a.hire:hover {
   background-color: #ebeb5e;
   color: #1a1a1a;

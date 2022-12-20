@@ -60,6 +60,7 @@ body {
 }
 
 header {
+  width: 100vw;
   min-height: 5vh;
   padding: 1% 0;
   width: 100%;
@@ -196,6 +197,7 @@ main .hero {
   overflow: hidden;
   position: relative;
   height: 94vh;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -410,6 +412,7 @@ main .hero .graphics.left {
 
 .projects {
   padding: 10% 5%;
+  width: 100vw;
   min-height: 100vh;
 }
 .projects .projects_content {
@@ -527,6 +530,7 @@ main .hero .graphics.left {
 
 .skills {
   padding: 10% 5%;
+  width: 100vw;
   min-height: 100vh;
   background-color: #1a1a1a;
 }
@@ -576,6 +580,7 @@ main .hero .graphics.left {
 }
 
 footer {
+  width:100vw;
   min-height: 10vh;
 }
 footer .social_links {

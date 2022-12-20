@@ -29,6 +29,8 @@
 @media (max-width: 600px) {
   .heading_container img {
     width: 30%;
+    left:-45px;
+    bottom:-25px;
   }
 }
 
@@ -103,6 +105,7 @@ header nav {
 header nav i {
   cursor: pointer;
   display: none !important;
+  margin-left: 5px;
 }
 @media (max-width: 1100px) {
   header nav i {
@@ -339,6 +342,12 @@ main .hero .graphics.left {
   }
 }
 @media (max-width: 600px) {
+ 
+  .about
+  {
+    padding: 38px 5%;
+  }
+ 
   .about .about_content {
     padding-top: 40%;
   }

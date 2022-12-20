@@ -25,22 +25,22 @@ let projects=
     {
         name:"Ebuy",
         tools:"HTML, CSS & Bootstrap",
-        imgSource:"./dist/img/websites/ebuy.png",
+        imgSource:"./dist/img/websites/Ebuy.png",
         url:"https://aklu-10.github.io/Ebuy-WebDesign/",
         type:"website"
     },
     {
         name:"Sugary Design",
         tools:"Adobe Illustrator",
-        imgSource:"./dist/img/illus/background2.png",
-        url:"./dist/img/illus/background2.png",
+        imgSource:"./dist/img/illus/Background2.png",
+        url:"./dist/img/illus/Background2.png",
         type:"illus"
     },
     {
         name:"Geometric Design",
         tools:"Adobe Illustrator",
-        imgSource:"./dist/img/illus/bird.png",
-        url:"./dist/img/illus/bird.png",
+        imgSource:"./dist/img/illus/Bird.png",
+        url:"./dist/img/illus/Bird.png",
         type:"illus"
     },
     {

@@ -47,7 +47,7 @@ html {
     font-size: 80%;
   }
 header nav a.hire{
-width:30%;
+width:max-content;
 }
 }
 

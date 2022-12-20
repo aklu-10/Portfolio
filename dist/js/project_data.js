@@ -23,6 +23,13 @@ let projects=
         type:"website"
     },
     {
+        name:"Ebuy",
+        tools:"HTML, CSS & Bootstrap",
+        imgSource:"/dist/img/websites/ebuy.png",
+        url:"https://aklu-10.github.io/Ebuy-WebDesign/",
+        type:"website"
+    },
+    {
         name:"Sugary Design",
         tools:"Adobe Illustrator",
         imgSource:"/dist/img/illus/background2.png",
@@ -86,6 +93,7 @@ let projects=
         url:"https://incredible-shortbread-58b6b8.netlify.app/",
         type:"other"
     }
+    
 
     
 ]

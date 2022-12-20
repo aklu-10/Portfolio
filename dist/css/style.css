@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Pinyon+Script&display=swap');
 ::-webkit-scrollbar {
   width: 4px;
 }
@@ -82,12 +82,17 @@ header a {
   color: white;
 }
 header .logo {
-  font-size: 1.3rem;
-  font-family: "Pinyon Script", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+header .logo a
+{
+  font-size: 1.3rem;
+  font-family: 'Petit Formal Script', sans-serif;
+}
+
 header nav {
   width: 30%;
   display: flex;

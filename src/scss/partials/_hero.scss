@@ -1,0 +1,163 @@
+
+
+main{
+
+    .hero
+    {
+
+        @include media(1100px)
+        {
+            padding-top:5%;
+            flex-direction: column-reverse;
+        }
+        overflow: hidden;
+        position: relative;
+        height: 94vh;
+        @include Flex(space-around,center);
+        padding:0% 10%;
+        .hero_content
+        {
+            flex: 1;
+            padding-bottom: 4%;
+            h4
+            {
+                color:white;
+                font-size: 1.4rem;
+
+            }
+            h1
+            {
+                color:white;
+                font-size: 3rem;
+                font-weight: 600;
+                @include media(600px)
+                {
+                    font-size: 2.2rem;
+                }
+                
+                span
+                {
+                    color:$yellow;
+                    font-weight: 900;
+                }
+            }
+            p
+            {
+                color:white;
+                font-size: 1.4rem;
+            }
+
+            .hire_btn
+            {
+                margin-top: 5%;
+                border: none;
+                border-radius: 5px;
+                background-color: $yellow;
+                color:$dark;
+                padding: 10px 20px;
+                font-weight: 600;
+                font-size: 1.1rem;
+                
+               
+            }
+        }
+        .hero_img
+        {
+            position: relative;
+
+            @include media(1100px)
+            {
+                img
+                {
+                    width:40%;
+                    display: block;
+                    margin: 0 30%;
+                }
+            }
+
+            @include media(600px)
+            {
+                img
+                {
+                    width:90%;
+                    padding-left:10%;
+                    margin: 0 0;
+                }
+            }
+
+            .portf_img
+            {
+                position: relative;
+                z-index: -1;
+                top:50px;
+            }
+
+            .graphics_
+            {
+                position: absolute;
+                z-index: -1;
+            }   
+
+        }
+
+        .graphics
+        {
+            
+            position: absolute;
+            bottom:20%;
+            right:0;
+            width: max-content;
+            height: max-content;
+            transform: rotate(180deg);
+            @include media(600px)
+            {
+                right:20%;
+                z-index: -1;
+                opacity: .2;
+            }
+
+            img
+            {
+                position: absolute;
+                bottom:0;
+                transition: .2s ease;
+
+                &:nth-child(1)
+                {
+                    left:calc(var(--xpos));
+                }
+                &:nth-child(2)
+                {
+                    left:calc(var(--xpos)*11px);
+                    bottom:-5px;
+                }
+                &:nth-child(3)
+                {
+                    left:calc(var(--xpos)*18.5px);
+                    bottom:-2px;
+                }
+
+                &:hover
+                {
+                    transform: translateX(10px);
+                }
+            }
+            
+
+        }
+
+        .graphics.left
+        {
+            @include media(600px)
+            {
+                display: none;
+            }
+            left:0;
+            bottom:5%;
+            transform: rotate(0deg);
+
+        }
+
+    }
+
+}

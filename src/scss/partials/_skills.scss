@@ -1,0 +1,59 @@
+
+.skills
+{
+    padding: 10% 5%;
+    min-height: 100vh;
+    background-color: $dark;
+    .skills_container
+    {
+        margin-top: 10%;    
+        @include Flex(space-around,center );
+        flex-wrap: wrap;
+        min-height: 50vh;
+            
+        @include media(600px)
+        {
+            flex-direction: column;
+
+        }
+
+        .skill_item
+        {
+            width:500px;
+            margin: 20px;
+            @include media(1100px)
+            {
+                margin-top: 10%;
+            }
+            @include media(600px)
+            {
+                width:90%;
+            }
+            
+            h2
+            {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color:$yellow;
+            }
+            meter
+            {
+                width: 100%;
+            }
+            ::-webkit-meter-bar
+            {
+                background-color: transparent;
+                border:1px solid $yellow;
+                height: 12px;
+                border-radius: 1px;
+            }
+            ::-webkit-meter-optimum-value
+            {
+                background-color: $yellow;
+            }
+    
+        }
+    }
+
+}
+

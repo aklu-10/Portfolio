@@ -1,0 +1,124 @@
+
+.projects
+{
+    padding: 10% 5%;
+    min-height: 100vh;
+
+    .projects_content
+    {
+        margin-top: 10%;
+        min-height: 80vh;
+        @include Flex(center,center);
+        flex-direction:column;
+        position: relative;
+        .filter_button
+        {
+            width:100%;
+            min-height: 7vh;
+            position: absolute;
+            top:0;
+            @include Flex(space-around,center);
+            
+            button
+            {
+                @include media(600px)
+                {
+                    padding: 10px 30px;
+                }
+                cursor: pointer;
+                padding: 10px 40px;
+                background-color: transparent;
+                border: 1px solid $yellow;
+                color:$yellow;
+                border-radius:10px;
+                font-size: 1rem;
+                &.active
+                {
+                    background-color: $yellow;
+                    color:$dark;
+                }
+            }
+        }
+
+        .project_container
+        {
+            width:100%;
+            padding: 10px;
+            @include Flex(space-around,center);
+            flex-wrap: wrap;
+            gap:40px;
+            .project_item
+            {
+                position: relative;
+                width:400px;
+                height: 300px;
+                border:1px solid rgba(255,255,255,0.3);
+                margin-top: 10%;
+                img
+                {
+                    width:100%;
+                    height: 100%;
+                    object-fit: contain;
+                    cursor: pointer;
+                    
+                }
+                .project_name_and_tool
+                {
+                    @include Flex(space-between,center);
+                    position: absolute;
+                    bottom:-12%;
+                    width:100%;
+                    padding: 0 4px;
+                    h2
+                    {
+                        color:white;
+                        width: 70%;
+                    }
+                    span
+                    {
+                        padding: 0 4px;
+                        width:30%;
+                        text-align: right;
+                        color:white;
+                        font-size: .8rem;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            a::before
+            {
+                content: '';
+                display: block;
+                position: absolute;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background-color: rgba(255,255,255,0.3);
+                height: 0;
+                transition: .2s ease;
+            }
+            a:hover::before
+            {
+                height: 100%;
+            } 
+            a:hover::after
+            {
+                content: 'View Project';
+                display: block;
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                color:$dark;
+                font-size: 1.5rem;
+                background-color:$dark;
+                color:$yellow;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

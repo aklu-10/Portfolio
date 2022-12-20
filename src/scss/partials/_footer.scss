@@ -1,0 +1,21 @@
+footer
+{
+    min-height: 10vh;
+
+    .social_links
+    {
+        margin: auto;
+        width: 40%;
+        @include Flex(space-around,center);
+        cursor: pointer;
+        i
+        {
+            font-size: 1.8rem;
+            color:rgba($color: #ebeb5e, $alpha: 0.2);
+            &:hover
+            {
+                color:$yellow;
+            }
+        }
+    }
+}

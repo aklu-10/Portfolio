@@ -1,0 +1,198 @@
+@import './utilities/style';
+
+html
+{
+    scroll-behavior: smooth;
+    @include media(1100px)
+    {
+        font-size:70%;
+    }
+    @include media(600px)
+    {
+        font-size:80%;
+
+    }
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui,sans-serif;
+}
+
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: $dark;
+}
+
+header
+{
+    min-height: 5vh;
+    padding: 1% 0;
+    width:100%;
+    position: sticky;
+    top:0;
+    z-index: 100;
+    @include Flex(space-around,center);
+    gap:20%;
+    background-color: transparent;
+    @include media(1100px)
+    {
+        padding: 20px;
+    }
+    a
+    {
+        text-decoration: none;
+        color:white;
+
+       
+    }
+
+    .logo
+    {
+        font-size: clamp(1rem,1.3rem,1.5rem);
+        font-family: 'Pinyon Script',sans-serif;
+        @include Flex(center,center);
+          }
+
+    nav
+    {
+        width:30%;
+        @include Flex(space-around,center);
+        i{
+            cursor: pointer;
+            display: none !important;
+            @include media(1100px)
+            {display: block !important;}
+
+        }
+        a
+        { 
+            
+            @include media(1100px)
+            {
+                display: none;
+                
+                &.hire,&.logo_text
+                {
+                    display: block;
+                }
+            }
+    
+        
+            &.hire
+            {
+                border:1px solid$yellow;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color:$yellow;
+                cursor: pointer;
+                
+                &:hover
+                {
+                    background-color: $yellow;
+                    color:$dark;
+                    
+                }
+            }
+
+            &:hover
+            {
+                color:$yellow;
+            }
+        }
+
+    }
+
+    nav.mobile_menu
+    {   
+        position: fixed;
+        width:0%;
+        top:0;
+        left:0;
+        z-index: 20;
+        height: 100vh;
+        display: none;
+        overflow: hidden;
+        transition: .1s ease;
+        box-shadow: 0 0 5px gray;
+        
+        @include media(1100px)
+        {
+            @include Flex(space-around,center);
+            flex-direction: column;
+            background-color: $yellow;
+            a
+            {
+                display: block;
+                color:$dark;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }   
+            
+            .fa-xmark
+            {
+                position: absolute;
+                top:4%;
+                right:10%;
+                font-size: 2rem;
+                color:$dark;
+                padding: 5px 10px;
+                cursor: pointer;
+                
+            }
+
+        }
+    }
+    
+    
+}
+
+.header_sticky
+{
+    background-color: $yellow;
+    box-shadow: 0 0 5px $yellow;
+    transition: .4s ease;
+    nav
+    {
+        i
+        {
+            color: $dark !important;
+        }
+    }
+    a
+    {
+        
+        color:$dark;
+        &:hover
+        {
+            color:white;
+        }
+
+        &.hire
+        {
+            background-color: $yellow;
+            border:1px solid $dark;
+            color: $dark;
+
+            &:hover
+            {
+                background-color: $dark;
+                color:$yellow;
+                box-shadow: 0 0 5px $dark;
+            }
+        }
+    }
+   
+}
+
+ 
+@import './partials/hero';
+@import './partials/about';
+@import './partials/projects';
+@import './partials/skills';
+@import './partials/footer';

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+$lightDark:#232323;
+$dark:#1a1a1a;
+$yellow:#ebeb5e;
+
+@mixin media($width)
+{
+    @media (max-width:$width){
+        @content
+    }
+}
+
+@mixin Flex($hAlign,$vAlign)
+{
+    display: flex;
+    justify-content: $hAlign;
+    align-items: $vAlign;
+}
+
+::-webkit-scrollbar
+{
+    width:4px;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: $yellow;
+    border-radius: 50px;
+}
+
+.btn_hover:hover
+{
+    box-shadow: 0 0 5px $yellow;
+    transition: .5s ease;
+}
+
+    
+.heading_container
+{
+    position: relative;
+    .section_heading
+    {
+        font-size: 2rem;
+        color:$yellow;
+        border-bottom: 1px solid $yellow;
+    }
+    img
+    {
+        @include media(600px)
+        {
+            width:30%;
+        }
+        position: absolute;
+        bottom:-30px;
+        left:-55px;
+    }
+}
+
+

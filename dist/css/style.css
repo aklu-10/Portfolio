@@ -45,9 +45,11 @@ html {
 @media (max-width: 600px) {
   html {
     font-size: 80%;
-  }
-header nav a.hire{
-width:30vw;
+  } 
+  header nav {
+  width:50%;
+    
+  
 }
 }
 

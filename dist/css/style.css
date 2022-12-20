@@ -46,11 +46,10 @@ html {
   html {
     font-size: 80%;
   } 
-  header nav {
-  width:80%;
-    
-  
-}
+  header nav a.hire
+  {
+    width:100px !important;
+  }
 }
 
 * {
